@@ -12,6 +12,12 @@ function error()
     exit 1
 }
 
+make explode &>> /dev/null
+
+if [ $? -ne 0 ]; then
+    error "make failed!" 
+fi
+
 [ -x explode ] || error "explode not found or not executable"
 
 declare -A stringTest
