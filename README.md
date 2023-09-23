@@ -11,39 +11,28 @@ By the end of this activity, a student should be able to:
 
 ## Introduction
 
-This lab will require you to implement two C functions, `readString()`,  `mysteryExplode()`, and a Makefile. The `readString()` function reads a single line from a file and returns the string in dynamically allocated memory as a char pointer.  The `mysteryExplode()` function explodes the c-string as described below.  You will also need to include a makefile to compile and link your program into an executable called _explode_.
+This lab will require you to implement two C functions, `readString()`,  `mysteryExplode()`, and a Makefile. the `readString()` function reads a single line from a file and returns the string in dynamically allocated memory as a char pointer.  The `mysteryExplode()` function explodes the c-string as described below.  You will also need to include a makefile to compile and link your program into an executable called _explode_.
 
 ## Files
 
-This lab is available at
+This lab is templated at
 
 ```
 https://github.com/mrasamny/csci-320-lab1
 ```
 
-Fork your copy of the repo to your Github account and **clone** your forked copy on **your VM**.  You should commit your code as you work on your program and push it systematically to your repo.  
-
-<p style="color:red;background-color:#eaeaea;padding:5px;border-radius:10px;border:5px ridge gray;">Every change that results in testing your code should be committed and pushed to your repo.  If I do not see that you are pushing your changes or if you push only the final result, <u>you will receive no credit for this programming lab</u>.  Your finalized product should be on your Github repo.</p>
-
-Please complete the form at the link below to provide your Github username.
-
-<p style="text-align:center;">
-<a href="https://forms.office.com/r/886Td0Frxv">Provide your Github Infromation by clicking here.</a>
-</p>
+Click the <span style="background-color:green;color:white;">Use as template</span> button to copy the repo to your GitHub account and **clone** your repo on **your VM**.  You should commit your code as you work on your program and push it systematically to your repo.  **Your finalized product should be on your GitHub repo**.
 
 Included in the repo are,
 
 - **lab1.h** - definitions relevant to this programming project. DO NOT MODIFY.
 - **lab1.c** - this is where you implement the required functions.
-- **main.c** - contains the main function.  DO NOT MODIFY.
+- **main.c** - contains main function.  DO NOT MODIFY.
 - **README.md** - this file.
-- **testExplode.sh** - contains bash script to test your code.
-
-You may need to make the **testExplode.sh** an executable before using it.
 
 ## Mystery Explosion
 
-A word explosion mystery has occurred. However, to figure out the mystery and how a word explodes into a recurring new one, you will only be provided an example with no context clues.
+A word explosion mystery has occurred. However, to figure out the mystery and how a word explodes into a reoccurring new one, you will only be provided an example with no context clues.
 
 A non-empty string such as `"Code"` is turned into `"CCoCodCode"`.
 
@@ -61,7 +50,7 @@ mysteryExplode(":-)") --> "::-:-)"
 You are required to complete the following:
 
 1. Implement the two functions in the **lab1.c** file as declared and commented in the **lab1.h** file.
-2. Write a makefile that will compile and link your program into an executable called _**explode**_.
+2. Write a makefile that will compile and link your program into an executable called _explode_.
 
 ## Program Specifications
 
@@ -74,5 +63,5 @@ Your program must perform the following:
 
 ## Submission
 
-Push your final submission to your Github repo link on Blackboard before the submission deadline.  Your repo should show no submissions after the submission deadline.  Any submissions after the deadline will result in an immediate zero (0) on the assignment.  If your **program does not compile, you will receive a zero (0) on the assignment**.
+Your are to submit your GitHub repo link on Blackboard.  Your repo should show no submissions after the submissions deadline.  Any submissions after the deadline will result in an immediate zero (0) on the assignment.  If your **program does not compile, you will receive a zero (0) on the assignment**.
 
