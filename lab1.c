@@ -2,6 +2,7 @@
  * Implement your solution in thi file
  *
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,17 +15,15 @@ char* readString(char* fileName){
     return line;
 }
 
-char* mysteryExplode(const char* str){
-    int len = strlen(str);
-    char* newString = (char *)malloc((len * (len + 1) / 2) + 1);
+char* mysteryExplode(const char* s) {
+    int n = strlen(s), i = 0, j, k = 0;
+    char* t = malloc(n * (n + 1) / 2 + 1);
+    if (!t) return NULL;
 
-    int index = 0;
-    for (int i = 0; i < len; i++) {
-        for (int j = 0; j <= i; j++) {
-            newString[index++] = str[j];
-        }
-    }
-    newString[index] = '\0';
+    for (; i < n; i++)
+        for (j = i; j < n; j++)
+            t[k++] = s[j];
 
-    return newString;
+    t[k] = 0;
+    return t;
 }
